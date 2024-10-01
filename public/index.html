@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tombol i love you</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100"></body>
+
+    <!-- Tombol -->
+    <button id="tombol" onclick="tampilkanPesan()" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">
+        Klik Aku
+    </button>
+
+    <!-- Pesan -->
+    <div id="pesan" class="text-3xl font-semibold text-pink-500 mt-5 font-serif"></div>
+    <script>
+        function tampilkanPesan() {
+            // Menampilkan teks "I love you"
+            document.getElementById("pesan").innerHTML = "I love you Kerianti";
+            // Menghilangkan tombol
+            document.getElementById("tombol").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
